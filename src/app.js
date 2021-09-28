@@ -21,11 +21,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-    host: 'localhost',
-    user: 'Andres',
-    password: 'ar428719ar428719',
+    host: 'us-cdbr-east-04.cleardb.com',
+    user: 'bbc5776e448903',
+    password: '89bd9f32',
     port: 3306,
-    database: 'crudnodejsmysql'
+    database: 'heroku_f127fc83d157a48'
 }, 'single'));
 app.use(express.urlencoded({
     extended: false
