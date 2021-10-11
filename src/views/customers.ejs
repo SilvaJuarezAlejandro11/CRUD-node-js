@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miau</title>
+    <title>CRUD nodejs</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a href="/" class="navbar-brand">Crud Node JS mysql</a>
+        <a href="/" class="navbar-brand">Crud Node JS mongoDB</a>
+                <a href="https://youtu.be/VxRXlUrV6y0" class="navbar-brand">Video del tutorial</a>
     </nav>
 
-    <h1>CLIENTES</h1>
+    <h1 style="text-align: center; padding-top: 20px;">CLIENTES</h1>
 
     <div class="container">
         <div class="row mt-5">
@@ -54,15 +54,17 @@
                     <div class="card-body">
                         <form class="" action="/add" method="POST">
                             <div class="form-group">
-                                <input type="text" name="name" placeholder="Nombre" class="form-control">
+                                <input type="text" name="name" placeholder="Nombre" required class="form-control">
 
                             </div>
                             <div class="form-group">
-                                <input type="text" name="address" placeholder="Dirrección" class="form-control">
+                                <input type="text" name="address" placeholder="Dirrección" required class="form-control">
 
                             </div>
                             <div class="form-group">
-                                <input type="text" name="phone" placeholder="Teléfono" class="form-control">
+                                <input type="text" name="phone" placeholder="Teléfono(ejemplo: 52+39234479)" 
+                                length="11"
+                                required class="form-control">
 
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
